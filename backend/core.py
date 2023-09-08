@@ -6,6 +6,8 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationalRetrievalChain
 from langchain.vectorstores import Pinecone
 import pinecone
+from langchain.agents import create_pandas_dataframe_agent
+from langchain.memory import ConversationBufferMemory
 
 
 pinecone.init(
